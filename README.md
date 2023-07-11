@@ -13,7 +13,8 @@ Intended to be an improvement over the standard X/Y/Z plot script.
 * Can generate images at higher resolution, but crop them if not interested in the entire image.
   
 ### Convenience Features
-* Each image generated is cached at full resolution and uncropped as a PNG, so that you can change the sheet settings and rerun the script quickly without having to regenerate all the images.
+* Each image generated is cached at full resolution and uncropped as a PNG.
+  * This is saves time when you've made a slight mistake in sheet settings, or want to make a change to only one or some of the dimension settings.
 * Can disable image/row/column/sheet titles if not wanted.
 * Can save as PNG, JPEG or WEBP with quality set for smaller file size.
 * Can save sheets at a lower resolution scale for smaller file size.
