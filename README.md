@@ -38,4 +38,4 @@ You can read more about the A1111 webui's API here: https://github.com/AUTOMATIC
 ### TODO
 * Change font size and padding per title (image, row, column, sheet), as currently they are pre-set scales on the specified font size.
 * Add params to image data. 
-* Maybe fancy borders to better indicate image groups where images also have a white background.  
+* Maybe fancy borders to better indicate image groups where images also have a white background, other nice things, etc.
