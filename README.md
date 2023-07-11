@@ -26,6 +26,12 @@ This is not an extension, it is a standalone script.
 * Can save sheets at a lower resolution scale for smaller file size.
 * Can change font size and padding.
 
+### Example
+Output of "example_comparison.py":
+| SD 1.4 | SD 1.5 | SD 2.1 |
+| --- | --- | --- |
+| ![1_Stable Diffusion 1 4](https://github.com/toomanydev/sd-comparison-sheets/assets/69650390/f276c841-9a17-44aa-b55d-d0bfefa74186) | ![2_Stable Diffusion 1 5](https://github.com/toomanydev/sd-comparison-sheets/assets/69650390/848b7302-fe74-4cfd-8e46-c4798cf2bc06) | ![3_Stable Diffusion 2 1 Base](https://github.com/toomanydev/sd-comparison-sheets/assets/69650390/8d3f5628-be78-4fe9-8163-36b35bf5896d) |
+
 ### How-To
 * Have Python and pip installed, etc.
 * Have the Automatic1111 webui running with API enabled by using `--api` in your "webui-user.bat" file's `COMMANDLINE_ARGS` section.
@@ -51,12 +57,6 @@ This is not an extension, it is a standalone script.
 * `override_settings_restore_afterwards` is set to true by default, so the settings in `override_settings` shouldn't be retained, but the webui may display them in the browser while generating those images.  
   You may need to change this to false to save time if switching hypernetworks, VAEs, etc, as it may switch back and forth each image. But check first to make sure that it will save time - the function of the API may have changed since I observed this.
 * You can read more about the A1111 webui's API here: https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/API.
-
-### Example
-Output of "example_comparison.py":
-| SD 1.4 | SD 1.5 | SD 2.1 |
-| --- | --- | --- |
-| ![1_Stable Diffusion 1 4](https://github.com/toomanydev/sd-comparison-sheets/assets/69650390/f276c841-9a17-44aa-b55d-d0bfefa74186) | ![2_Stable Diffusion 1 5](https://github.com/toomanydev/sd-comparison-sheets/assets/69650390/848b7302-fe74-4cfd-8e46-c4798cf2bc06) | ![3_Stable Diffusion 2 1 Base](https://github.com/toomanydev/sd-comparison-sheets/assets/69650390/8d3f5628-be78-4fe9-8163-36b35bf5896d) |
 
 ### TODO
 * Change font size and padding per title (image, row, column, sheet), as currently they are pre-set scales on the specified font size.
