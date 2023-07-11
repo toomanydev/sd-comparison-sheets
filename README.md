@@ -4,8 +4,8 @@ Intended to be an improvement over the standard X/Y/Z plot script.
 This is not an extension, it is a standalone script.
 
 ### Comparison Features
-* Override image generation parameters per: image, row, column, sheet.
-  * This is 4 custom dimensions as opposed to the standard 3 custom dimensions with 1 dimension exclusively for seed changes.
+* Provide the base image generation parameters, then override them per: image, row, column, sheet.
+  * This is 4 dimensions as opposed to the standard 3 dimensions with 1 dimension exclusively for seed changes.
 * Each dimension can have multiple overrides.
   * e.g. choosing a different seed per image as well as changing prompt.
   * This can allow you to create even more ad-hoc dimensions to compare.
@@ -60,5 +60,6 @@ Output of "example_comparison.py":
 
 ### TODO
 * Change font size and padding per title (image, row, column, sheet), as currently they are pre-set scales on the specified font size.
+* Allow multiple lines on the image titles.
 * Add params to image data. 
 * Maybe fancy borders to better indicate image groups where images also have a white background, other nice things, etc.
