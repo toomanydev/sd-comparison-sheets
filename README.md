@@ -36,8 +36,8 @@ This is not an extension, it is a standalone script.
 * Go to http://127.0.0.1:7860/docs to find the webui API (substitute for your IP/port combination if different).  
   Here, you will find the parameters you can change under `POST /sdapi/v1/txt2img`.  
   You may not need to go find parameters if the ones in the example are sufficient.
-* As you can see in the example, some settings are under `override_settings`.  
-  These can be found under `GET /sdapi/v1/options`.
+  * As you can see in the example, some settings are under `override_settings`.  
+    These can be found under `GET /sdapi/v1/options`.
 * Run "your_comparison.py".
 
 #### Notes
