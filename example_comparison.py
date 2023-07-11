@@ -8,7 +8,7 @@ from comparison_producer import produce_sheets
 # User Inputs
 
 # Stable Diffusion checkpoints will be checked against the list.
-# Keep in mind that the web-ui will need its checkpoint list refreshed in-browser.
+# Keep in mind that the web-ui will need its checkpoint list refreshed in-browser
 # if new ones are created or moved.
 
 # VAE will not be checked against the list.
@@ -43,7 +43,7 @@ image_crop_coords = [  # Goes from top-left to bottom-right.
     (0, 0),
 ]
 
-image_overrides = [  # Blocks do not increment seed automatically.
+image_overrides = [  # Images do not increment seed automatically.
     ("Cat 1234567890", {
 
     }),
