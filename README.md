@@ -3,7 +3,7 @@ Uses the API of the Automatic1111 webui to produce comparison sheets.
 Intended to be an improvement over the standard X/Y/Z plot script.  
 This is not an extension, it is a standalone script.
 
-### Generation Features
+### Comparison Features
 * Override image generation parameters per: image, row, column, sheet.
   * This is 4 custom dimensions as opposed to the standard 3 custom dimensions with 1 dimension exclusively for seed changes.
 * Each dimension can have multiple overrides.
