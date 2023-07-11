@@ -24,7 +24,8 @@ Intended to be an improvement over the standard X/Y/Z plot script.
 ### How-To
 Download the repo and place "example_comparison.py" and "comparison_producer.py" in a folder where you want the comparison images to be produced.\
 You can run "pip install -r requirements.txt" if you do not already have Pillow (PIL) and Requests installed.\
-Make a copy of the "example_comparison.py" script and make changes, then run that script. "comparison_producer.py" is just the internals and is not intended to be ran directly.
+Make a copy of the "example_comparison.py" script and make changes, then run that script.\
+"comparison_producer.py" is just the internals and is not intended to be ran directly.
 
 Go to http://127.0.0.1:7860/docs to find the webui API (substitute for your IP/port combination if different).\
 You can find the parameter names under "POST /sdapi/v1/txt2img".\
