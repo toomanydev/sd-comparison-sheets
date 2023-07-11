@@ -16,18 +16,22 @@ Intended to be an improvement over the standard X/Y/Z plot script.
 * Each image generated is cached at full resolution and uncropped as a PNG, so that you can change the sheet settings and rerun the script quickly without having to regenerate all the images.
 * Can disable image/row/column/sheet titles if not wanted.
 * Can save as PNG, JPEG or WEBP with quality set for smaller file size.
-* Can save at a lower resolution scale for smaller file size.
+* Can save sheets at a lower resolution scale for smaller file size.
 * Can change font size and padding.
 
-### Info
-You can read about the A1111 webui's API here: https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/API \
+### How-To
+Download the repo and place "example_comparison.py" and "comparison_producer.py" in a folder where you want the comparison images to be produced.\
+You can run "pip install -r requirements.txt" if you do not already have Pillow (PIL) and Requests installed.\
+Make a copy of the "example_comparison.py" script and make changes, then run that script. "comparison_producer.py" is just the internals and is not intended to be ran directly.
 
 Go to http://127.0.0.1:7860/docs to find the webui API (substitute for your IP/port combination if different).\
 You can find the parameter names under "POST /sdapi/v1/txt2img".\
-As you can see in base_params, some settings are under "override_settings". These can be found under "GET /sdapi/v1/options".\
-For consistency, "override_settings_restore_afterwards" is set to false, so your settings will be saved.
+As you can see in base_params, some settings are under "override_settings". These can be found under "GET /sdapi/v1/options".
 
-Make a copy of "example_comparison.py" and make changes to match your desired comparisons, then run that script. "comparison_producer.py" is just the internals and is not intended to be ran directly.
+"override_settings_restore_afterwards" is set to true by default, so the settings in "override_settings" shouldn't be retained, but the webui may display them while generating those images.\
+You may need to change this to false to save time if switching hypernetworks, VAEs, etc, as it may switch back and forth each image. But check first to make sure that it will save time.
+
+You can read more about the A1111 webui's API here: https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/API.
 
 ### TODO
 * Change font size and padding per title (image, row, column, sheet), as currently they are pre-set scales on the specified font size.
